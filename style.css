@@ -49,13 +49,13 @@ body {
 }
 */
 
-#zombie_container {
+#zombie1_container {
   width: 10%;
   position: absolute;
   top: 20vw;
-  left: 50vw;
+  left: 30vw;
 }
-#zombie_sprite {
+#zombie1_sprite {
   width: 100%;
 }
 #zombie2_container {
@@ -65,6 +65,15 @@ body {
   left: 50vw;
 }
 #zombie2_sprite {
+  width: 100%;
+}
+#zombie3_container {
+  width: 10%;
+  position: absolute;
+  top: 30vw;
+  left: 80vw;
+}
+#zombie3_sprite {
   width: 100%;
 }
 
