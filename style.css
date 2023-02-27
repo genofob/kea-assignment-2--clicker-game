@@ -1,5 +1,17 @@
+/*    -- ANIMATIONS --    */
+
+@keyframes zombiewalk {
+  1% {
+    transform: scale(5%);
+  }
+  100% {
+    transform: scale(200%);
+  }
+}
+
 body {
   margin: 0;
+  background-image: linear-gradient(black, red, yellow);
 }
 
 #screen {
@@ -16,11 +28,7 @@ body {
 
 #game_background {
   grid-area: 1 / 1;
-  /*
-  background-image: linear-gradient(150deg, #20c903 0%, #09793b 100%);
-  */
-
-  background-image: url(img/Cave.jpg);
+  background-image: url(img/Cave2.jpeg);
   background-size: cover;
 }
 
@@ -29,31 +37,26 @@ body {
 }
 
 #diamond_container {
-  width: 10%;
+  width: 5%;
   position: absolute;
-  top: 50vw;
+  top: 10vw;
   left: 10vw;
 }
 #diamond_sprite {
   width: 100%;
 }
 
-/*
-#jumber_container {
-  position: absolute;
-  top: 10vw;
-  left: 50vw;
-}
-#jumber_sprite {
-  width: 100%;
-}
-*/
-
 #zombie1_container {
   width: 10%;
   position: absolute;
-  top: 20vw;
-  left: 30vw;
+  top: 29vw;
+  left: 57vw;
+  animation-name: zombiewalk;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards;
+  animation-delay: 0s;
 }
 #zombie1_sprite {
   width: 100%;
@@ -61,8 +64,14 @@ body {
 #zombie2_container {
   width: 10%;
   position: absolute;
-  top: 30vw;
-  left: 50vw;
+  top: 29vw;
+  left: 57vw;
+  animation-name: zombiewalk;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards;
+  animation-delay: 3s;
 }
 #zombie2_sprite {
   width: 100%;
@@ -70,28 +79,55 @@ body {
 #zombie3_container {
   width: 10%;
   position: absolute;
-  top: 30vw;
-  left: 80vw;
+  top: 29vw;
+  left: 57vw;
+  animation-name: zombiewalk;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards;
+  animation-delay: 6s;
 }
 #zombie3_sprite {
   width: 100%;
 }
 
-/*
-#demon_container {
-  position: absolute;
-  top: 40vw;
-  left: 50vw;
+#game_ui {
+  grid-area: 1/1;
+  grid-row: 1;
 }
-#demon_sprite {
+
+#score_board_container {
+  width: 5%;
+  position: absolute;
+  top: 58vw;
+  right: 5vw;
+}
+#score_gem {
   width: 100%;
 }
-*/
+
+#life_board_container {
+  width: 21%;
+  position: absolute;
+  top: 54vw;
+  left: 41vw;
+}
+#hp {
+  width: 100%;
+}
+
+#timer_container {
+  width: 11%;
+  position: absolute;
+  top: 58vw;
+  left: 5vw;
+}
+#timer {
+  width: 100%;
+}
 
 /*
-#game_ui {}
-#score_board {}
-#life_board {}
 #start {}
 #game_over {}
 */
